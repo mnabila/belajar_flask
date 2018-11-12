@@ -1,0 +1,53 @@
+{% extends "dashboard/components/base.html" %}
+{%- block css -%}
+<link rel="stylesheet" type="text/css" href="{{ url_for('.static', filename='css/post.css') }}">
+{%- endblock css -%}
+{%- block js -%}
+    <script src="{{ url_for('.static', filename='vendor/ckeditor/ckeditor.js') }}" type="text/javascript" charset="utf-8"></script>
+{%- endblock js -%}
+{% block contents %}
+{% with messages = get_flashed_messages(with_categories, "error") %}
+    {% if messages %}
+        {% for msg in messages %}
+        <div class="alert alert-danger" role="alert">
+            {{ msg }}
+        </div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+{% with messages = get_flashed_messages(with_categories, "succes") %}
+    {% if messages %}
+        {% for msg in messages %}
+        <div class="alert alert-success" role="alert">
+            {{ msg|safe }}
+        </div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+<div class="card">
+    <div class="card-body">
+        <form class="form-iniline" action="{{ url_for('dashboard.article', option='new') }}" method="POST">
+            <div class="row">
+                <div class="col">
+                    {{ form.csrf_token }}
+                    {{ form.title(class="form-control", placeholder="Judul") }}
+                    {{ form.body(class="form-control ckeditor", id="ckeditor") }}
+                    {{ form.save(class="btn btn-primary") }}
+                    {{ form.draft(class="btn btn-warning") }}
+                </div>
+                <div class="col-md-3">
+                    {{ form.category.label }}
+                    {{ form.category(class="form-control") }}
+                    <label>daftar kategori</label>
+                    <ul>
+                        {% for tag in category %}
+                            <li>{{ tag.name }}</li>
+                        {% endfor %}
+                    </ul>
+                    <p>catatan: untuk memisahkan kategori gunakan koma</p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock contents %}

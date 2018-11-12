@@ -1,0 +1,151 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Article	../apps/blog/models.py	/^class Article(db.Model):$/;"	kind:class	line:12
+Article	../apps/blog/views.py	/^from .models import Article, post, Category$/;"	kind:namespace	line:2
+Article	../apps/dashboard/views.py	/^from apps.blog.models import Article, Category, post$/;"	kind:namespace	line:7
+Article	../tester.py	/^from apps.blog.models import post, Article, Category$/;"	kind:namespace	line:3
+Blueprint	../apps/blog/urls.py	/^from flask import Blueprint$/;"	kind:namespace	line:1
+Blueprint	../apps/dashboard/views.py	/^from flask import (Blueprint, render_template, request,$/;"	kind:namespace	line:1
+BooleanField	../apps/dashboard/forms.py	/^from wtforms import (StringField, PasswordField, SubmitField, BooleanField, TextAreaField, SelectMultipleField)$/;"	kind:namespace	line:2
+Category	../apps/blog/models.py	/^class Category(db.Model):$/;"	kind:class	line:23
+Category	../apps/blog/views.py	/^from .models import Article, post, Category$/;"	kind:namespace	line:2
+Category	../apps/dashboard/views.py	/^from apps.blog.models import Article, Category, post$/;"	kind:namespace	line:7
+Category	../tester.py	/^from apps.blog.models import post, Article, Category$/;"	kind:namespace	line:3
+DEBUG	../apps/settings.py	/^    DEBUG = True$/;"	kind:variable	line:11
+DataRequired	../apps/dashboard/forms.py	/^from wtforms.validators import DataRequired$/;"	kind:namespace	line:3
+Flask	../apps/__init__.py	/^from flask import Flask, redirect, url_for$/;"	kind:namespace	line:1
+Flask	../views.py	/^from flask import Flask, render_template$/;"	kind:namespace	line:1
+FlaskForm	../apps/dashboard/forms.py	/^from flask_wtf import FlaskForm$/;"	kind:namespace	line:1
+LoginManager	../apps/__init__.py	/^from flask_login import LoginManager$/;"	kind:namespace	line:4
+Migrate	../apps/__init__.py	/^from flask_migrate import Migrate$/;"	kind:namespace	line:3
+PERMANENT_SESSION_LIFETIME	../apps/settings.py	/^    PERMANENT_SESSION_LIFETIME = timedelta(minutes=5)$/;"	kind:variable	line:15
+PasswordField	../apps/dashboard/forms.py	/^from wtforms import (StringField, PasswordField, SubmitField, BooleanField, TextAreaField, SelectMultipleField)$/;"	kind:namespace	line:2
+SECRET_KEY	../apps/settings.py	/^    SECRET_KEY = '1234567890qwerty'$/;"	kind:variable	line:12
+SQLAlchemy	../apps/__init__.py	/^from flask_sqlalchemy import SQLAlchemy$/;"	kind:namespace	line:2
+STATIC_FOLDER	../apps/blog/urls.py	/^from apps.settings import TEMPLATES_FOLDER, STATIC_FOLDER$/;"	kind:namespace	line:3
+STATIC_FOLDER	../apps/dashboard/views.py	/^from apps.settings import STATIC_FOLDER, TEMPLATES_FOLDER$/;"	kind:namespace	line:4
+STATIC_FOLDER	../apps/settings.py	/^STATIC_FOLDER = os.path.join(os.getcwd() + "\/static")$/;"	kind:variable	line:5
+SelectMultipleField	../apps/dashboard/forms.py	/^from wtforms import (StringField, PasswordField, SubmitField, BooleanField, TextAreaField, SelectMultipleField)$/;"	kind:namespace	line:2
+StringField	../apps/dashboard/forms.py	/^from wtforms import (StringField, PasswordField, SubmitField, BooleanField, TextAreaField, SelectMultipleField)$/;"	kind:namespace	line:2
+SubmitField	../apps/dashboard/forms.py	/^from wtforms import (StringField, PasswordField, SubmitField, BooleanField, TextAreaField, SelectMultipleField)$/;"	kind:namespace	line:2
+TEMPLATES_FOLDER	../apps/blog/urls.py	/^from apps.settings import TEMPLATES_FOLDER, STATIC_FOLDER$/;"	kind:namespace	line:3
+TEMPLATES_FOLDER	../apps/dashboard/views.py	/^from apps.settings import STATIC_FOLDER, TEMPLATES_FOLDER$/;"	kind:namespace	line:4
+TEMPLATES_FOLDER	../apps/settings.py	/^TEMPLATES_FOLDER = os.path.join(os.getcwd() + "\/templates")$/;"	kind:variable	line:6
+TextAreaField	../apps/dashboard/forms.py	/^from wtforms import (StringField, PasswordField, SubmitField, BooleanField, TextAreaField, SelectMultipleField)$/;"	kind:namespace	line:2
+UserMixin	../apps/dashboard/models.py	/^from flask_login import UserMixin$/;"	kind:namespace	line:2
+Users	../apps/blog/views.py	/^from apps.dashboard.models import Users$/;"	kind:namespace	line:3
+Users	../apps/dashboard/models.py	/^class Users(db.Model, UserMixin):$/;"	kind:class	line:5
+Users	../apps/dashboard/views.py	/^from .models import Users$/;"	kind:namespace	line:6
+Users	../tester.py	/^from apps.dashboard.models import Users$/;"	kind:namespace	line:2
+__init__.py	../apps/__init__.py	1;"	kind:file	line:1
+__tablename__	../apps/blog/models.py	/^    __tablename__ = "article"$/;"	kind:variable	line:13
+__tablename__	../apps/blog/models.py	/^    __tablename__ = "category"$/;"	kind:variable	line:24
+__tablename__	../apps/dashboard/models.py	/^    __tablename__ = "users"$/;"	kind:variable	line:6
+aksi	../tester.py	/^aksi = Category(name="aksi")$/;"	kind:variable	line:9
+app	../apps/__init__.py	/^app = Flask(__name__)$/;"	kind:variable	line:7
+app	../runserver.py	/^from apps import app$/;"	kind:namespace	line:1
+app	../views.py	/^app = Flask(__name__)$/;"	kind:variable	line:3
+article	../apps/dashboard/models.py	/^    article = db.relationship("Article", backref="user", lazy=True)$/;"	kind:variable	line:12
+article	../apps/dashboard/views.py	/^def article():$/;"	kind:function	line:65
+article_all	../apps/blog/views.py	/^article_all = Article.query.all()$/;"	kind:variable	line:5
+artikel1	../tester.py	/^artikel1 = Article(title="satu", body="loremEsse ad cupidatat aliquip ut nostrud veniam esse laborum id enim eiusmod eiusmod in in.")$/;"	kind:variable	line:14
+author	../apps/blog/views.py	/^def author(uid):$/;"	kind:function	line:43
+bBlog	../apps/__init__.py	/^from apps.blog.urls import bBlog$/;"	kind:namespace	line:13
+bBlog	../apps/blog/urls.py	/^bBlog = Blueprint("blog", __name__, static_folder=STATIC_FOLDER, template_folder=TEMPLATES_FOLDER)$/;"	kind:variable	line:6
+bDashboard	../apps/__init__.py	/^from apps.dashboard.views import bDashboard$/;"	kind:namespace	line:16
+bDashboard	../apps/dashboard/views.py	/^bDashboard = Blueprint("dashboard", __name__,$/;"	kind:variable	line:10
+backref	../apps/blog/models.py	/^                               backref=db.backref("article", lazy="dynamic"))$/;"	kind:variable	line:20
+bio	../apps/dashboard/models.py	/^    bio = db.Column(db.Text, nullable=True)$/;"	kind:variable	line:11
+body	../apps/blog/models.py	/^    body = db.Column(db.Text)$/;"	kind:variable	line:16
+body	../apps/dashboard/forms.py	/^    body = TextAreaField(label="body")$/;"	kind:variable	line:17
+category	../apps/blog/models.py	/^    category = db.relationship("Category", secondary=post,$/;"	kind:variable	line:19
+category	../apps/dashboard/forms.py	/^    category = TextAreaField(label="kategori")$/;"	kind:variable	line:18
+category_all	../apps/blog/views.py	/^category_all = Category.query.all()$/;"	kind:variable	line:6
+config	../migrations/env.py	/^config = context.config$/;"	kind:variable	line:9
+context	../migrations/env.py	/^from alembic import context$/;"	kind:namespace	line:2
+current_app	../migrations/env.py	/^from flask import current_app$/;"	kind:namespace	line:20
+current_user	../apps/dashboard/views.py	/^from flask_login import (login_user, logout_user, current_user, login_required)$/;"	kind:namespace	line:3
+dani	../tester.py	/^dani = Users(username="dani", password="dani", name="dani ardaniar")$/;"	kind:variable	line:7
+datetime	../apps/blog/models.py	/^from datetime import datetime$/;"	kind:namespace	line:2
+db	../apps/__init__.py	/^db = SQLAlchemy(app)$/;"	kind:variable	line:9
+db	../apps/blog/models.py	/^from apps import db$/;"	kind:namespace	line:1
+db	../apps/dashboard/models.py	/^from apps import db$/;"	kind:namespace	line:1
+db	../apps/dashboard/views.py	/^from apps import lm, db$/;"	kind:namespace	line:5
+db	../tester.py	/^from apps import db$/;"	kind:namespace	line:1
+engine_from_config	../migrations/env.py	/^from sqlalchemy import engine_from_config, pool$/;"	kind:namespace	line:3
+env.py	../migrations/env.py	1;"	kind:file	line:1
+fileConfig	../migrations/env.py	/^from logging.config import fileConfig$/;"	kind:namespace	line:4
+flaskConfig	../apps/__init__.py	/^from .settings import flaskConfig$/;"	kind:namespace	line:5
+flaskConfig	../apps/settings.py	/^class flaskConfig:$/;"	kind:class	line:10
+formArticle	../apps/dashboard/forms.py	/^class formArticle(FlaskForm):$/;"	kind:class	line:15
+formArticle	../apps/dashboard/views.py	/^from .forms import formLogin, formArticle$/;"	kind:namespace	line:8
+formLogin	../apps/dashboard/forms.py	/^class formLogin(FlaskForm):$/;"	kind:class	line:6
+formLogin	../apps/dashboard/views.py	/^from .forms import formLogin, formArticle$/;"	kind:namespace	line:8
+forms.py	../apps/dashboard/forms.py	1;"	kind:file	line:1
+home	../apps/dashboard/views.py	/^def home():$/;"	kind:function	line:55
+horor	../tester.py	/^horor = Category(name="horor")$/;"	kind:variable	line:8
+id	../apps/blog/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:14
+id	../apps/blog/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:25
+id	../apps/dashboard/models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:7
+index	../apps/__init__.py	/^def index():$/;"	kind:function	line:22
+index	../apps/blog/views.py	/^def index():$/;"	kind:function	line:9
+index	../views.py	/^def index():$/;"	kind:function	line:7
+lm	../apps/__init__.py	/^lm = LoginManager(app=app)$/;"	kind:variable	line:11
+lm	../apps/dashboard/views.py	/^from apps import lm, db$/;"	kind:namespace	line:5
+logger	../migrations/env.py	/^logger = logging.getLogger('alembic.env')$/;"	kind:variable	line:14
+logging	../migrations/env.py	/^import logging$/;"	kind:namespace	line:5
+login	../apps/dashboard/forms.py	/^    login = SubmitField()$/;"	kind:variable	line:12
+login	../apps/dashboard/views.py	/^def login():$/;"	kind:function	line:26
+login_required	../apps/dashboard/views.py	/^from flask_login import (login_user, logout_user, current_user, login_required)$/;"	kind:namespace	line:3
+login_user	../apps/dashboard/views.py	/^from flask_login import (login_user, logout_user, current_user, login_required)$/;"	kind:namespace	line:3
+logout	../apps/dashboard/views.py	/^def logout():$/;"	kind:function	line:48
+logout_user	../apps/dashboard/views.py	/^from flask_login import (login_user, logout_user, current_user, login_required)$/;"	kind:namespace	line:3
+migrate	../apps/__init__.py	/^migrate = Migrate(app, db)$/;"	kind:variable	line:10
+models.py	../apps/blog/models.py	1;"	kind:file	line:1
+models.py	../apps/dashboard/models.py	1;"	kind:file	line:1
+name	../apps/blog/models.py	/^    name = db.Column(db.String(50))$/;"	kind:variable	line:26
+name	../apps/dashboard/models.py	/^    name = db.Column(db.String(50))$/;"	kind:variable	line:10
+os	../apps/settings.py	/^import os$/;"	kind:namespace	line:1
+password	../apps/dashboard/forms.py	/^    password = PasswordField(label="Password", validators=[$/;"	kind:variable	line:9
+password	../apps/dashboard/models.py	/^    password = db.Column(db.String(100))$/;"	kind:variable	line:9
+pool	../migrations/env.py	/^from sqlalchemy import engine_from_config, pool$/;"	kind:namespace	line:3
+post	../apps/blog/models.py	/^post = db.Table("post",$/;"	kind:variable	line:5
+post	../apps/blog/views.py	/^def post(id):$/;"	kind:function	line:20
+post	../apps/blog/views.py	/^from .models import Article, post, Category$/;"	kind:namespace	line:2
+post	../apps/dashboard/views.py	/^from apps.blog.models import Article, Category, post$/;"	kind:namespace	line:7
+post	../tester.py	/^from apps.blog.models import post, Article, Category$/;"	kind:namespace	line:3
+process_revision_directives	../migrations/env.py	/^    def process_revision_directives(context, revision, directives):$/;"	kind:function	line:61
+pubDate	../apps/blog/models.py	/^    pubDate = db.Column(db.DateTime, default=datetime.now())$/;"	kind:variable	line:17
+redirect	../apps/__init__.py	/^from flask import Flask, redirect, url_for$/;"	kind:namespace	line:1
+remember	../apps/dashboard/forms.py	/^    remember = BooleanField(label="Remember user login")$/;"	kind:variable	line:11
+render_template	../apps/blog/views.py	/^from flask import render_template$/;"	kind:namespace	line:1
+render_template	../apps/dashboard/views.py	/^from flask import (Blueprint, render_template, request,$/;"	kind:namespace	line:1
+render_template	../views.py	/^from flask import Flask, render_template$/;"	kind:namespace	line:1
+request	../apps/dashboard/views.py	/^from flask import (Blueprint, render_template, request,$/;"	kind:namespace	line:1
+run_migrations_offline	../migrations/env.py	/^def run_migrations_offline():$/;"	kind:function	line:31
+run_migrations_online	../migrations/env.py	/^def run_migrations_online():$/;"	kind:function	line:50
+runserver.py	../runserver.py	1;"	kind:file	line:1
+save	../apps/dashboard/forms.py	/^    save = SubmitField()$/;"	kind:variable	line:19
+settings.py	../apps/settings.py	1;"	kind:file	line:1
+tags	../apps/blog/views.py	/^def tags(name):$/;"	kind:function	line:32
+target_metadata	../migrations/env.py	/^target_metadata = current_app.extensions['migrate'].db.metadata$/;"	kind:variable	line:23
+tester.py	../tester.py	1;"	kind:file	line:1
+timedelta	../apps/settings.py	/^from datetime import timedelta$/;"	kind:namespace	line:2
+title	../apps/blog/models.py	/^    title = db.Column(db.String(300))$/;"	kind:variable	line:15
+title	../apps/dashboard/forms.py	/^    title = StringField(label="Judul")$/;"	kind:variable	line:16
+unauthorized_callback	../apps/dashboard/views.py	/^def unauthorized_callback():$/;"	kind:function	line:21
+url_for	../apps/__init__.py	/^from flask import Flask, redirect, url_for$/;"	kind:namespace	line:1
+urls.py	../apps/blog/urls.py	1;"	kind:file	line:1
+user_id	../apps/blog/models.py	/^    user_id = db.Column(db.Integer, db.ForeignKey("users.id"))$/;"	kind:variable	line:18
+user_load	../apps/dashboard/views.py	/^def user_load(uid):$/;"	kind:function	line:16
+username	../apps/dashboard/forms.py	/^    username = StringField(label="Username", validators=[$/;"	kind:variable	line:7
+username	../apps/dashboard/models.py	/^    username = db.Column(db.String(50), unique=True)$/;"	kind:variable	line:8
+views	../apps/blog/urls.py	/^from . import views$/;"	kind:namespace	line:2
+views.py	../apps/blog/views.py	1;"	kind:file	line:1
+views.py	../apps/dashboard/views.py	1;"	kind:file	line:1
+views.py	../views.py	1;"	kind:file	line:1
+with_statement	../migrations/env.py	/^from __future__ import with_statement$/;"	kind:namespace	line:1

@@ -1,0 +1,42 @@
+{% extends "dashboard/components/base.html" %}
+{%- block css -%}
+<link rel="stylesheet" type="text/css" href="{{ url_for('.static', filename='css/post.css') }}">
+{%- endblock css -%}
+{% block contents %}
+<div class="card card-body">
+    <input type="text" class="form-control">
+</div>
+<div class="card">
+    {{action}}
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th style="width: 60%">Article</th>
+                    <th style="width: 25%">Label</th>
+                    <th style="width: 15%">Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for article in articles %}
+                <tr>
+                    <td>{{ article.title }}</td>
+                    <td>
+                        {% for tags in article.category %}
+                            <a href="{{ url_for('dashboard.article', option='all', label=tags.name) }}">{{ tags.name }}</a>
+                        {% endfor %}
+                    </td>
+                    <td>
+                        <div class="btn-group">
+                            <a href="{{ article.id }}" class="btn btn-warning">Ubah</a>
+                            <a href="{{ article.id }}" class="btn btn-danger">Hapus</a>
+                            <a href="{{ article.id }}" class="btn btn-danger">Hapus</a>
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock contents %}

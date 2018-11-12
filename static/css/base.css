@@ -1,0 +1,21 @@
+body {
+    /* background-color: #263238; */
+}
+.article-layout {
+    padding: 5px;
+}
+.container-fluid {
+    padding: 0px;
+}
+.jumbotron {
+    border-radius: 0px;
+}
+.navbar-brand {
+    border-bottom: solid 2px #FFFFFF;
+}
+.nav-link {
+    border-bottom: solid 2px;
+}
+.nav-link:hover {
+    border-bottom: solid 2px #FFFFFF;
+}
